@@ -1,4 +1,4 @@
 package com.WebTesting.Pages;
 
-public class Locators {
+public class amazonLocators {
 }
