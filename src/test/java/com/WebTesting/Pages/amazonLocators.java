@@ -18,8 +18,17 @@ public class amazonLocators {
     @FindBy(id = "nav-search-bar-form")
     public WebElement searchBarSearchButton;
 
-    @FindBy(linkText = "OXO")
+    @FindBy(xpath = "//span[.='OXO']")
     public WebElement OXOClick;
+
+    @FindBy (xpath = "//img[@src='https://m.media-amazon.com/images/I/714yvQFLL8L._AC_UL320_.jpg']")
+    public WebElement firstWoodenSpoon;
+
+    @FindBy(id = "add-to-cart-button")
+    public WebElement addToCart;
+
+    @FindBy(xpath = "//input[@aria-labelledby='attach-sidesheet-checkout-button-announce']")
+    public WebElement continueToCheckOut;
 
 
 
