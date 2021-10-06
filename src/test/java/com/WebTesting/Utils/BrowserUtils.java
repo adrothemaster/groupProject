@@ -1,5 +1,4 @@
 package com.WebTesting.Utils;
 
-public class WebDriver {
-
+public class BrowserUtils {
 }
