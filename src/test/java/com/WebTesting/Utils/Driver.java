@@ -14,11 +14,11 @@ public class Driver {
 
     private static WebDriver driver;
 
-    public static WebDriver getDriver(String args){
+    public static WebDriver getDriver(){
 
         if (driver == null){
 
-            String Browser = args;
+            String Browser = ConfigurationReader.getProperties("browser");
 
             switch (Browser) {
                 case "chrome":
