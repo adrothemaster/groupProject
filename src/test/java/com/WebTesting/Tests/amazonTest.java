@@ -3,6 +3,8 @@ package com.WebTesting.Tests;
 import com.WebTesting.Pages.amazonLocators;
 import com.WebTesting.Utils.ConfigurationReader;
 import com.WebTesting.Utils.Driver;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,15 +36,15 @@ public class amazonTest {
         amazonLocators amazonLocators = new amazonLocators();
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
 
-        amazonLocators.searchBar.click();
+        //amazonLocators.searchBar.click();
         amazonLocators.searchBar.sendKeys("wooden spoon");
         amazonLocators.searchBarSearchButton.submit();
 
-        wait.until(ExpectedConditions.elementToBeClickable(amazonLocators.OXOClick));
+        //wait.until(ExpectedConditions.elementToBeClickable(amazonLocators.OXOClick));
+        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         amazonLocators.OXOClick.click();
 
-        Driver.getDriver().manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-
+        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         amazonLocators.firstWoodenSpoon.click();
 
         amazonLocators.addToCart.click();

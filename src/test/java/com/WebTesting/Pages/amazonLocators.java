@@ -21,7 +21,7 @@ public class amazonLocators {
     @FindBy(xpath = "//span[.='OXO']")
     public WebElement OXOClick;
 
-    @FindBy (xpath = "//img[@src='https://m.media-amazon.com/images/I/714yvQFLL8L._AC_UL320_.jpg']")
+    @FindBy (xpath = "//span[.='OXO Good Grips Large Wooden Spoon']")
     public WebElement firstWoodenSpoon;
 
     @FindBy(id = "add-to-cart-button")
